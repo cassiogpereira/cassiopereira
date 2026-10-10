@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#080b17" />
+  <title>Sistemas sob medida para seu negócio</title>
+  <meta name="description" content="Sistemas sob medida para empresas, com hospedagem em nuvem, segurança, backup e manutenção contínua." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="wrap nav">
+      <a href="#topo" class="brand" aria-label="Cássio Pereira, início">
+        <span class="mark">CP</span>
+        Cássio Pereira
+      </a>
+      <nav class="links" aria-label="Principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#seguranca">Segurança</a>
+        <a href="#case">Case</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+      <a href="#contato" class="nav-cta">Pedir orçamento</a>
+    </div>
+  </header>
+
+  <main id="topo">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="blob b1" aria-hidden="true"></div>
+      <div class="blob b2" aria-hidden="true"></div>
+
+      <div class="wrap hero-grid">
+        <div class="hero-inner">
+          <span class="pill"><span class="dot"></span>Sistemas sob medida + hospedagem</span>
+          <h1>Um sistema feito para o jeito que a sua empresa trabalha</h1>
+          <p class="lede">
+            Nós desenvolvemos o sistema, colocamos no ar em nuvem e cuidamos dele depois:
+            segurança, backup, atualizações e melhorias. Você usa, nós mantemos.
+          </p>
+          <div class="hero-actions">
+            <a href="#contato" class="btn-primary">Pedir orçamento</a>
+            <a href="#processo" class="btn-secondary">Ver como funciona</a>
+          </div>
+        </div>
+
+        <!-- janela de código demonstrativa -->
+        <div class="code-win" role="img" aria-label="Exemplo ilustrativo: um pedido de sistema sob medida retorna status 200, com hospedagem, SSL, backup e suporte ativos.">
+          <div class="cw-bar">
+            <div class="cw-lights" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="cw-tabs" aria-hidden="true">
+              <span class="on">novo-sistema.sh</span>
+              <span>resposta.json</span>
+            </div>
+          </div>
+<pre aria-hidden="true"><span class="t-c">$</span> curl <span class="t-f">-X POST</span> <span class="t-s">https://cassiopereira.com.br/projetos</span> \
+  <span class="t-f">-d</span> <span class="t-s">'{
+    "sistema": "sob-medida",
+    "hospedagem": "nuvem",
+    "manutencao": true
+  }'</span></pre>
+          <div class="cw-status" aria-hidden="true">
+            <span>Resposta</span>
+            <span class="cw-state">
+              <span class="cw-loading">Processando…</span>
+              <span class="cw-ok">200 OK</span>
+            </span>
+          </div>
+<pre class="cw-resp" aria-hidden="true">{
+  <span class="t-k">"status"</span>: <span class="t-s">"no ar"</span>,
+  <span class="t-k">"https"</span>: <span class="t-b">true</span>,
+  <span class="t-k">"backup"</span>: <span class="t-s">"diário"</span>,
+  <span class="t-k">"suporte"</span>: <span class="t-s">"contínuo"</span>
+}</pre>
+          <div class="cw-foot" aria-hidden="true">
+            <span>main · 0 erros</span>
+            <span>UTF-8</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <ul class="hero-chips" aria-label="O que está incluso" style="list-style:none; padding:0;">
+          <li class="chip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            Hospedagem em nuvem
+          </li>
+          <li class="chip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            HTTPS e certificado SSL
+          </li>
+          <li class="chip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            Backup automático
+          </li>
+          <li class="chip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            Manutenção contínua
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= PROBLEMA ================= -->
+    <section id="problema">
+      <div class="wrap">
+        <div class="eyebrow"><span class="pill">O problema</span></div>
+        <h2 class="title">Sistema pronto obriga você a mudar o processo. Deveria ser o contrário.</h2>
+        <p class="lede-2">
+          Planilhas espalhadas e softwares genéricos resolvem metade do problema e criam a outra metade.
+        </p>
+
+        <div class="problem-card">
+          <div class="side a">
+            <h3>Como costuma ser</h3>
+            <p>
+              Informação duplicada em planilhas, telas que ninguém usa, funções pagas que não servem
+              e aquele controle que só uma pessoa sabe fazer. Quando algo quebra, não há a quem recorrer.
+            </p>
+          </div>
+          <div class="side b">
+            <h3>Com um sistema sob medida</h3>
+            <p>
+              Só as telas que a sua equipe precisa, com os dados num lugar só. O sistema fica no ar,
+              seguro e com backup, e cresce junto com a empresa sem você trocar de ferramenta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVIÇOS ================= -->
+    <section id="servicos">
+      <div class="wrap">
+        <div class="eyebrow"><span class="pill">Serviços</span></div>
+        <h2 class="title">Do primeiro rascunho ao sistema rodando</h2>
+        <p class="lede-2">Um único responsável pelo desenvolvimento, pela hospedagem e pela manutenção.</p>
+
+        <div class="bento">
+          <article class="b-card feature">
+            <div>
+              <div class="b-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+              </div>
+              <h3>Sistema sob medida</h3>
+            </div>
+            <p>
+              Cadastros, controles, aprovações, relatórios e painéis desenhados a partir do seu processo real.
+              Funciona no computador e no celular, com acesso por usuário e permissões.
+            </p>
+          </article>
+
+          <article class="b-card">
+            <div class="b-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+            </div>
+            <h3>Hospedagem em nuvem</h3>
+            <p>Servidor configurado e monitorado, domínio próprio e HTTPS. Você não precisa contratar nada à parte.</p>
+          </article>
+
+          <article class="b-card">
+            <div class="b-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
+            </div>
+            <h3>Segurança e backup</h3>
+            <p>Acesso protegido, dados criptografados em trânsito e cópias automáticas para restaurar quando precisar.</p>
+          </article>
+
+          <article class="b-card">
+            <div class="b-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76Z"/></svg>
+            </div>
+            <h3>Manutenção e evolução</h3>
+            <p>Correções, atualizações e novas funções conforme a operação muda. O sistema não fica parado no tempo.</p>
+          </article>
+
+          <article class="b-card">
+            <div class="b-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 17H7A5 5 0 0 1 7 7h2"/><path d="M15 7h2a5 5 0 1 1 0 10h-2"/><path d="M8 12h8"/></svg>
+            </div>
+            <h3>Integrações</h3>
+            <p>Conexão com APIs, WhatsApp, e-mail e outros sistemas que a empresa já usa.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESSO ================= -->
+    <section id="processo" class="process">
+      <div class="wrap">
+        <div class="eyebrow"><span class="pill">Como funciona</span></div>
+        <h2 class="title">Quatro etapas, sem surpresa no caminho</h2>
+
+        <ol class="track" style="list-style:none; padding:0; margin-bottom:0;">
+          <li class="node">
+            <div class="dot">1</div>
+            <h3>Conversa</h3>
+            <p>Entendemos como a sua equipe trabalha hoje e o que precisa mudar.</p>
+          </li>
+          <li class="node">
+            <div class="dot">2</div>
+            <h3>Protótipo</h3>
+            <p>Você vê as telas antes de uma linha de código ir para produção.</p>
+          </li>
+          <li class="node">
+            <div class="dot">3</div>
+            <h3>Desenvolvimento</h3>
+            <p>Entregas em partes, testadas por você, com ajustes a cada rodada.</p>
+          </li>
+          <li class="node">
+            <div class="dot">4</div>
+            <h3>No ar e mantido</h3>
+            <p>Publicamos em nuvem e seguimos cuidando de segurança, backup e melhorias.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= SEGURANÇA ================= -->
+    <section id="seguranca">
+      <div class="wrap">
+        <div class="eyebrow"><span class="pill">Segurança</span></div>
+        <h2 class="title">Os dados da sua empresa bem guardados</h2>
+        <p class="lede-2">O básico bem feito, desde o primeiro dia, sem custo escondido.</p>
+
+        <div class="sec-grid">
+          <div class="sec-item">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+            <h3>HTTPS em tudo</h3>
+            <p>Certificado SSL ativo e renovado automaticamente.</p>
+          </div>
+          <div class="sec-item">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h3>Acesso por perfil</h3>
+            <p>Cada usuário vê e altera só o que o cargo permite.</p>
+          </div>
+          <div class="sec-item">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg></div>
+            <h3>Backup automático</h3>
+            <p>Cópias periódicas guardadas fora do servidor principal.</p>
+          </div>
+          <div class="sec-item">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></div>
+            <h3>Atualizações em dia</h3>
+            <p>Servidor e dependências atualizados para fechar brechas conhecidas.</p>
+          </div>
+          <div class="sec-item">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></div>
+            <h3>Registro de alterações</h3>
+            <p>Quem mudou o quê e quando, para auditoria interna.</p>
+          </div>
+          <div class="sec-item">
+            <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+            <h3>Monitoramento</h3>
+            <p>Aviso imediato se o sistema sair do ar, antes de alguém reclamar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CASE ================= -->
+    <section id="case">
+      <div class="wrap">
+        <div class="eyebrow"><span class="pill">Case</span></div>
+        <h2 class="title">Um sistema nosso, em produção</h2>
+
+        <div class="case-wrap">
+          <div class="plate" aria-hidden="true">
+            <div class="flag">BRASIL</div>
+            <div class="n">BRA2E19</div>
+          </div>
+          <div>
+            <h3>BuscadorDePlacas.com.br</h3>
+            <p>
+              Plataforma de consulta veicular pela placa, com painel do usuário, relatórios em PDF
+              e integrações com fontes de dados externas. Desenvolvida, hospedada e mantida por nós.
+            </p>
+            <a class="case-link" href="https://buscadordeplacas.com.br" target="_blank" rel="noopener">Conhecer o projeto</a>
+            <p class="case-note">Mesma estrutura de hospedagem e manutenção oferecida aos clientes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SOBRE ================= -->
+    <section id="sobre">
+      <div class="wrap">
+        <div class="eyebrow"><span class="pill">Sobre</span></div>
+        <h2 class="title">Quem vai cuidar do seu sistema</h2>
+
+        <div class="about">
+          <div class="card">
+            <div class="av" aria-hidden="true">CP</div>
+            <div class="n">Cássio Pereira</div>
+            <div class="r">Desenvolvedor de sistemas</div>
+          </div>
+          <div class="body">
+            <p>
+              Trabalhamos com desenvolvimento de sistemas internos para empresas: portais, controles de
+              suprimentos, painéis de monitoramento e ferramentas de gestão usadas todos os dias por equipes reais.
+            </p>
+            <p>
+              Aqui você fala direto com quem desenvolve. Sem repasse de demanda, sem ticket perdido:
+              a mesma equipe que entendeu o seu processo é quem mantém o sistema funcionando.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section id="contato">
+      <div class="wrap">
+        <div class="eyebrow"><span class="pill"><span class="dot"></span>Respondo em horário comercial</span></div>
+        <h2 class="title">Conte o que a sua empresa precisa</h2>
+
+        <div class="contact-wrap">
+          <div>
+            <p class="lede-2" style="margin-top:0;">
+              Descreva o processo que hoje dá trabalho. Nós retornamos com as perguntas certas e uma estimativa.
+            </p>
+            <ul class="channels">
+              <li>
+                <a href="https://wa.me/__TELEFONE_PRINCIPAL__" target="_blank" rel="noopener">WhatsApp</a>
+                <span>Resposta mais rápida</span>
+              </li>
+              <li>
+                <!-- TROCAR: confirme o e-mail -->
+                <a href="mailto:contato@cassiopereira.com.br">contato@cassiopereira.com.br</a>
+                <span>Para propostas e documentos</span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="cf" id="contact-form" novalidate>
+            <div class="field">
+              <label for="cf-nome">Nome</label>
+              <input id="cf-nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome" required />
+            </div>
+            <div class="field">
+              <label for="cf-empresa">Empresa</label>
+              <input id="cf-empresa" name="empresa" type="text" autocomplete="organization" placeholder="Nome da empresa" />
+            </div>
+            <div class="field">
+              <label for="cf-msg">O que você precisa</label>
+              <textarea id="cf-msg" name="mensagem" placeholder="Ex.: controlar pedidos de compra que hoje ficam em planilhas" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Enviar pelo WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>© <span id="ano"></span> Cássio Pereira · cassiopereira.com.br</span>
+      <a href="#topo">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/__TELEFONE_PRINCIPAL__" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.66-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.93.96-3.48-.23-.36a9.43 9.43 0 1 1 7.99 4.43m8.02-17.46A11.27 11.27 0 0 0 12.05.72C5.8.72.71 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.6l6.02-1.58a11.33 11.33 0 0 0 5.42 1.38h.01c6.25 0 11.34-5.09 11.34-11.34 0-3.03-1.18-5.88-3.32-8.02"/></svg>
+    <span class="wa-label">Fale conosco</span>
+  </a>
+
+  <script>
+    const WA_NUMBER = '__TELEFONE_PRINCIPAL__';
+
+    document.getElementById('ano').textContent = new Date().getFullYear();
+
+    document.getElementById('contact-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const f = e.currentTarget;
+      const nome = f.nome.value.trim();
+      const empresa = f.empresa.value.trim();
+      const msg = f.mensagem.value.trim();
+
+      if (!nome) { f.nome.focus(); return; }
+      if (!msg) { f.mensagem.focus(); return; }
+
+      const texto =
+        `Olá, Cássio! Sou ${nome}${empresa ? ` (${empresa})` : ''}.\n\n` +
+        `O que preciso: ${msg}`;
+
+      window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(texto)}`, '_blank', 'noopener');
+    });
+  </script>
+</body>
+</html>
