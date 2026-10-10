@@ -2,10 +2,11 @@
 /**
  * Build do site estático (cassiopereira.com.br).
  *
- * Lê site/.env (ver .env.example), injeta TELEFONE_PRINCIPAL nos
- * placeholders __TELEFONE_PRINCIPAL__ do index.html e gera site/dist/.
+ * Lê .env (ver .env.example), injeta TELEFONE_PRINCIPAL nos
+ * placeholders __TELEFONE_PRINCIPAL__ do index.html e gera public/.
+ * public/ é commitado — o update.sh do droplet apenas copia public/ para o site/.
  *
- * Uso: node site/build.mjs   (depois subir o conteúdo de site/dist/)
+ * Uso: node build.mjs   (depois commitar e dar push; no droplet: bash update.sh)
  */
 
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync } from 'node:fs';
@@ -41,10 +42,10 @@ if (!/^\d{12,13}$/.test(telefone)) {
 }
 
 const html = readFileSync(join(root, 'index.html'), 'utf8');
-const outDir = join(root, 'dist');
+const outDir = join(root, 'public');
 
 mkdirSync(outDir, { recursive: true });
 writeFileSync(join(outDir, 'index.html'), html.replaceAll('__TELEFONE_PRINCIPAL__', telefone));
 copyFileSync(join(root, 'style.css'), join(outDir, 'style.css'));
 
-console.log(`[OK] site/dist gerado com TELEFONE_PRINCIPAL=${telefone}`);
+console.log(`[OK] public/ gerado com TELEFONE_PRINCIPAL=${telefone}`);
